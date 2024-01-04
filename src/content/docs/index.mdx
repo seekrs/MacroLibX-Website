@@ -11,9 +11,10 @@ hero:
       link: /guides/getting_started/
       icon: right-arrow
       variant: primary
-    - text: References
-      link: /
-      icon: right-arrow
+    - text: Sources
+      link: https://github.com/seekrs/MacroLibX
+      icon: external
+      variant: secondary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
@@ -21,7 +22,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 The MacroLibX is a fast, easy to use, cross-platform graphics library to create applications without having to work directly with low level graphics APIs.
 It provides a simple window management and primitive tools for drawing onto the window such as displaying images from disk or drawing pixels directly.
 
-<CardGrid stagger>
+<CardGrid>
 	<Card title="Lightning fast" icon="rocket">
 		Built on top of Vulkan, the MacroLibX takes advantage of its very low-level nature to achieve high performance with great control over available resources.
 	</Card>

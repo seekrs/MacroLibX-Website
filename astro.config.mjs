@@ -5,28 +5,43 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [starlight({
-    title: 'MacroLibX',
-    favicon: '/logo.png',
-    logo: {
-      src: './src/assets/logo.png'
-    },
-    social: {
-      github: 'https://github.com/seekrs/MacroLibX'
-    },
-    sidebar: [{
-      label: 'Guides',
-      items: [
-      // Each item here is one entry in the navigation menu.
-      {
-        label: 'Getting Started',
-        link: '/guides/getting_started/'
-      }]
-    }, {
-      label: 'References',
-      autogenerate: {
-        directory: 'reference'
-      }
-    }]
-  }), icon()]
+	integrations: [starlight({
+		title: 'MacroLibX',
+		favicon: '/logo.png',
+		logo:
+		{
+			src: './src/assets/logo.png'
+		},
+		social:
+		{
+			github: 'https://github.com/seekrs/MacroLibX'
+		},
+		editLink: {
+			baseUrl: 'https://github.com/seekrs/MacroLibX-Website/edit/master/',
+		},
+		sidebar:
+		[
+			{
+				label: 'Guides',
+				items:
+				[
+					{
+						label: 'Getting Started',
+						link: '/guides/getting_started/'
+					},
+					{
+						label: 'Initialization',
+						link: '/guides/initialization/'
+					}
+				]
+			},
+			{
+				label: 'References',
+				autogenerate:
+				{
+					directory: 'reference'
+				}
+			}
+		]
+	}), icon()]
 });
