@@ -3,7 +3,6 @@ title: Events management
 description: caca boudin
 ---
 
-##  Introduction
 Events are the basis for writing interactive applications in MacroLibX.
 So it's essential that you understand this chapter thoroughly, as it will come in handy in your future graphics projects.
 
