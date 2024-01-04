@@ -26,7 +26,7 @@ int main(void)
 ```
 
 This will do nothing of course as we have no loop hook registered, therefore we will not be able to write anything to our frame.
-And without any event hook, this will just be an infinite loop :sadge:.
+And without any event hook, this will just be an infinite loop :sadge:
 
 To make our application more 'dynamic', we need to hook an update function to be able to change what's rendered.
 An example of dynamic application could be :
