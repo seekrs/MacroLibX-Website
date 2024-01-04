@@ -47,6 +47,10 @@ export default defineConfig({
 						label: 'Loop hook',
 						link: '/guides/update/'
 					},
+					{
+						label: 'Images',
+						link: '/guides/images/'
+					},
 				]
 			},
 			{
