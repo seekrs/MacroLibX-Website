@@ -63,7 +63,7 @@ int main(void)
     void* img = mlx_new_image(mlx, 100, 100);
 
     // here we read the pixel color at 42;10
-    int color = mlx_set_image_pixel(mlx, img, 42, 10);
+    int color = mlx_get_image_pixel(mlx, img, 42, 10);
 
     mlx_destroy_image(mlx, img);
     mlx_destroy_display(mlx);

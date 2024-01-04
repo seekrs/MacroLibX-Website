@@ -51,6 +51,10 @@ export default defineConfig({
 						label: 'Images',
 						link: '/guides/images/'
 					},
+					{
+						label: 'Colors',
+						link: '/guides/colors/'
+					},
 				]
 			},
 			{
