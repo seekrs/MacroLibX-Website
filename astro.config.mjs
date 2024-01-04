@@ -43,6 +43,10 @@ export default defineConfig({
 						label: 'Events',
 						link: '/guides/events/'
 					},
+					{
+						label: 'Loop hook',
+						link: '/guides/update/'
+					},
 				]
 			},
 			{
