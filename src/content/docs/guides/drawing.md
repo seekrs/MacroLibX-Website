@@ -69,6 +69,8 @@ int main(void)
 
     mlx_loop(mlx);
 
+    // do not forget to destroy the image, otherwise the MacroLibX will yell at you !
+    mlx_destroy_image(mlx, img);
     mlx_destroy_window(mlx, win);
     mlx_destroy_display(mlx);
 }
