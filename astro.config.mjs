@@ -14,7 +14,9 @@ export default defineConfig({
 		},
 		social:
 		{
-			github: 'https://github.com/seekrs/MacroLibX'
+			github: 'https://github.com/seekrs/MacroLibX',
+			telegram: 'https://t.me/kbz_8',
+			email: "mailto:contact@kbz8.me"
 		},
 		editLink: {
 			baseUrl: 'https://github.com/seekrs/MacroLibX-Website/edit/master/',
@@ -32,7 +34,15 @@ export default defineConfig({
 					{
 						label: 'Initialization',
 						link: '/guides/initialization/'
-					}
+					},
+					{
+						label: 'Drawing',
+						link: '/guides/drawing/'
+					},
+					{
+						label: 'Events',
+						link: '/guides/events/'
+					},
 				]
 			},
 			{
