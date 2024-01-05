@@ -32,7 +32,7 @@ brew install SDL2
 ```
 
 #### 🪟 Windows
-To build on Windows you may need to use the [xmake](https://xmake.io) build. [Here's](/) how you can use it.
+To build on Windows you may need to use the [xmake](https://xmake.io) build. [Here's](/guides/xmake) how you can use it.
 
 ### Clone and Build
 Finally, you can clone the Git repository. When inside it, run the GNU `make` command to compile MacroLibX. 

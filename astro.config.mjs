@@ -59,6 +59,10 @@ export default defineConfig({
 						label: 'Texts',
 						link: '/guides/text/'
 					},
+					{
+						label: 'xmake build',
+						link: '/guides/xmake/'
+					},
 				]
 			},
 			{
