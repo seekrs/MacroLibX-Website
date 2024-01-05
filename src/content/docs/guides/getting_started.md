@@ -11,7 +11,7 @@ There are some dependencies you need to install on your system to use the MacroL
 #### 🐧 Linux
 Here are a few common cases for different Linux distributions:
 
-For [Ubuntu](https://ubuntu.com)/[Debian](https://debian.org)-based distros:
+For [Ubuntu](https://ubuntu.com)/[Debian](https://www.youtube.com/watch?v=dQw4w9WgXcQ)-based distros:
 ```bash
 sudo apt update
 sudo apt install libsdl2-2.0-0 libsdl2-dev build-essential
