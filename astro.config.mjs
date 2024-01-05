@@ -55,6 +55,10 @@ export default defineConfig({
 						label: 'Colors',
 						link: '/guides/colors/'
 					},
+					{
+						label: 'Texts',
+						link: '/guides/text/'
+					},
 				]
 			},
 			{
