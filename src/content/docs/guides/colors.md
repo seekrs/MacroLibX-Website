@@ -31,6 +31,8 @@ int main(void)
 But sometime we cannot use the usefull hexadecimal to encode colors...
 
 ## 🔐 Encode and decode colors
+A good use case for encoding/decoding manually pixel colors might be when reading pixels from an image an using them after
+as `mlx_get_image_pixel` returns a pixel ecoded as `RGBA` and the MacroLibX uses `ARGB` everywhere.
 
 We can use two methods to encode and decode colors:
 * bit-shifting
