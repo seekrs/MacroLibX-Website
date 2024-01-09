@@ -1,6 +1,6 @@
 ---
 title: xmake build
-description: nope
+description: how to build the MacroLibX using xmake
 ---
 
 To build on Windows (if you don't use [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)), the MacroLibX uses [xmake](https://xmake.io), a build system which will download and compile all dependencies it won't find on your computer.

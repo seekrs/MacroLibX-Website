@@ -368,8 +368,8 @@ MLX_API int mlx_destroy_display(void* mlx);
 Retrieves screen size.
 
 * param `mlx` : Internal MLX application
-* param `x` : Pointer where to store X size
-* param `y` : Pointer where to store Y size
+* param `w` : Pointer where to store the width
+* param `h` : Pointer where to store the height
 
 Always returns 0, made this to copy the behaviour of the original minilibx.
 

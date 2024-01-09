@@ -1,6 +1,6 @@
 ---
 title: Events management
-description: caca boudin
+description: how do events work in the MacroLibX
 ---
 
 Events are the basis for writing interactive applications in MacroLibX.

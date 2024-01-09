@@ -1,6 +1,6 @@
 ---
 title: Images management
-description: rammus
+description: how do images work in the MacroLibX
 ---
 
 Images are a very important tool in MacroLibX in order to embrace its full potential.

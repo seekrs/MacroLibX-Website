@@ -1,7 +1,11 @@
 ---
 title: The MacroLibX
+head:
+  - tag: title
+    content: Home | MacroLibX
 description: The minilibx, but with Vulkan
 template: splash
+editUrl: false
 hero:
   tagline: Rewritten version of the minilibx graphics API used at 42school, using SDL2 & Vulkan.
   image:
@@ -18,6 +22,9 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import { ScriptComp } from '../../components/ScriptComp';
+import { Footer } from '../../components/Footer';
+import Seekrz from '../../components/seekrz.astro';
 
 The MacroLibX is a fast, easy to use, cross-platform graphics library to create applications without having to work directly with low level graphics APIs.
 It provides a simple window management and primitive tools for drawing onto the window such as displaying images from disk or drawing pixels directly.
@@ -30,9 +37,17 @@ It provides a simple window management and primitive tools for drawing onto the 
 		One of the guidelines of this lib was to get as close as possible to the old minilibx API, and therefore to the educational choices of the old minilibx.
 	</Card>
 	<Card title="It's all FOSS" icon="open-book">
-		Everything in this repo is entirely free and open source, all available under the MIT license (even the third-party libraries used).
+		Everything in the MacroLibX is entirely free and open source, all available under the MIT license (even the& third-party libraries used).
 	</Card>
 	<Card title="Cross-platform" icon="laptop">
 		Designed to be totally cross-platform, it can run on any SDL2-supported platform that supports Vulkan (even the Nintendo Switch ! theoretically... ).
 	</Card>
 </CardGrid>
+
+<Seekrz title="Brought to you by">
+	The best coalition of all the 42 campuses in the world and if you don't agree you're just a bunch of losers and we're above losers because we're better
+</Seekrz>
+
+<ScriptComp client:only />
+
+<Footer/>

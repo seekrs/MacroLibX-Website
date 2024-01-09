@@ -1,6 +1,6 @@
 ---
 title: Initialization
-description: nope
+description: how to init the MacroLibX
 ---
 
 ## 🚀 Initialization
