@@ -1,6 +1,6 @@
 ---
 title: Colors in the MacroLibX
-description: prout caca mdr
+description: how do colors work in the MacroLibX
 ---
 
 Colors in the MacroLibX are presented in an `int` format just like the minilibx.

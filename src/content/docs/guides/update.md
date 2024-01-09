@@ -1,6 +1,6 @@
 ---
 title: Loop hook
-description: AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+description: how do loops work in the MacroLibX
 ---
 
 Now that you've understood the basics of MacroLibX, we'll start by drawing a little animation in the window.

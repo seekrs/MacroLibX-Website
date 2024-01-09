@@ -1,6 +1,6 @@
 ---
 title: Drawing to a window
-description: prout
+description: how to draw in the MacroLibX
 ---
 
 ## ✏️ Drawing pixels

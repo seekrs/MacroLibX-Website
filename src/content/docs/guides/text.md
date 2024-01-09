@@ -1,6 +1,6 @@
 ---
 title: Text management
-description: AAAAAAAAbe
+description: how do texts work in the MacroLibX
 ---
 
 Just like the minilibx, the MacroLibX supports texts rendering using `mlx_string_put` and some functions to load fonts.

@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-description: yes
+description: getting started with the MacroLibX
 ---
 
 ## 🖥️ Installation
@@ -25,7 +25,7 @@ sudo pacman -S sdl2
 ###### Note that you need to have up do date video drivers with `libvulkan.so` installed.
 
 #### 🍎 MacOS
-MacroLibX on MacOS requires [SDL2](#) and [MoltenVK](https://github.com/KhronosGroup/MoltenVK). You can install both using the [Homebrew](https://brew.sh) package manager:
+MacroLibX on MacOS requires [SDL2](https://www.libsdl.org/) and [MoltenVK](https://github.com/KhronosGroup/MoltenVK). You can install both using the [Homebrew](https://brew.sh) package manager:
 ```sh
 brew install molten-vk
 brew install SDL2
