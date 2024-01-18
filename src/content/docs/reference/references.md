@@ -379,12 +379,12 @@ MLX_API int mlx_get_screens_size(void* mlx, int* w, int* h);
 ```
 
 ### mlx_set_fps_goal()
-Caps the FPS.
+Set a maximum number of FPS that MacroLibX cannot exceed.
 
 * param `mlx` : Internal MLX application
 * param `fps` : The FPS cap
 
-Always returns 0
+Always returns 0.
 
 ```c
 // Prototype
