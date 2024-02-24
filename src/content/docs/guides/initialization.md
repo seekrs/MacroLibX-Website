@@ -45,7 +45,7 @@ int main(void)
 {
     void* mlx = mlx_init();
     void* win = mlx_new_window(mlx, 400, 400, "Hello world!");
-    
+
     // Do you stuffs
 
     mlx_destroy_window(mlx, win); // note that you need to call `mlx_destroy_window` before calling `mlx_destroy_display`

@@ -1,6 +1,6 @@
 ---
 title: References
-description: caca
+description: Function references
 ---
 
 ## All prototypes

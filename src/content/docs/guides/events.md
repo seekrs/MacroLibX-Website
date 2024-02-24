@@ -19,7 +19,7 @@ Here's how we could do it :
 ```c
 #include "MacroLibX/includes/mlx.h"
 
-int key_hook(int key, void* param)
+int key_hook(int key, void* mlx)
 {
     if(key == 41) // 41 is the key code for escape
         mlx_loop_end(mlx); // if escape is pressed we stop the mlx_loop and so we continue in the main function

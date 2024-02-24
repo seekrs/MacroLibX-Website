@@ -21,7 +21,7 @@ You can directly encode colors using hexadecimal in C/C++ like so :
 int main(void)
 {
     /* Do stuffs */
-    
+
     mlx_pixel_put(mlx, win, 10, 10, 0xFF223344);
 
     /* Do stuffs */
@@ -31,8 +31,6 @@ int main(void)
 But sometime we cannot use the usefull hexadecimal to encode colors...
 
 ## 🔐 Encode and decode colors
-A good use case for encoding/decoding manually pixel colors might be when reading pixels from an image an using them after
-as `mlx_get_image_pixel` returns a pixel ecoded as `RGBA` and the MacroLibX uses `ARGB` everywhere.
 
 We can use two methods to encode and decode colors:
 * bit-shifting
@@ -84,7 +82,7 @@ We can therefore use 4 `unsigned char` to extract and insert `ARGB` components i
 ```c
 int create_argb(unsigned char a, unsigned char r, unsigned char g, unsigned char b)
 {
-    unsigned char bits[4] = {a, r, g , b};
+    unsigned char bits[4] = {b, g, r , a};
     return *((int*)bits);
 }
 
