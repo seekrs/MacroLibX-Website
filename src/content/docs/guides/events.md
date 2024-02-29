@@ -31,7 +31,7 @@ int main(void)
     void* mlx = mlx_init();
     void* win = mlx_new_window(mlx, 400, 400, "Hello world!");
 
-    // we pass the mlx pointer as the last param so it can be used in the key_hook finction
+    // we pass the mlx pointer as the last param so it can be used in the key_hook function
     mlx_on_event(mlx, win, MLX_KEYDOWN, key_hook, mlx);
 
     mlx_loop(mlx);
