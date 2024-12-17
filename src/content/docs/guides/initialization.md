@@ -13,7 +13,7 @@ To initialize the MacroLibX one could do the following :
 
 int main(void)
 {
-    void* mlx = mlx_init();
+    mlx_context mlx = mlx_init();
 }
 ```
 
@@ -27,8 +27,8 @@ We can give the window height, width and a title. We then will have to call `mlx
 
 int main(void)
 {
-    void* mlx = mlx_init();
-    void* win = mlx_new_window(mlx, 400, 400, "Hello world!");
+    mlx_context mlx = mlx_init();
+    mlx_window win = mlx_new_window(mlx, 400, 400, "Hello world!");
     mlx_loop(mlx);
 }
 ```
