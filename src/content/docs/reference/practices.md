@@ -34,7 +34,7 @@ When you find a problem with the MacroLibX, please search if it is not already r
 ## 👎 Bad practices
 
 ### Don't load multiple times the same image
-This is almost the same point as [this](http://localhost:4321/reference/practices/#reuse-images). Load each images only once and
+This is almost the same point as [this](#reuse-images). Load each images only once and
 especially don't load images each frame.
 
 ### Don't use multithreading
