@@ -30,6 +30,9 @@ export default defineConfig({
         label: 'Initialization',
         link: '/guides/initialization/'
       }, {
+        label: 'Window management',
+        link: '/guides/window/'
+      }, {
         label: 'Drawing',
         link: '/guides/drawing/'
       }, {

@@ -1,5 +1,5 @@
 ---
-title: Colors in the MacroLibX
+title: Colors
 description: how do colors work in the MacroLibX
 ---
 

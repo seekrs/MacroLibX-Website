@@ -541,11 +541,11 @@ Put an array of pixels in the window
 * param `x` : X coordinate
 * param `y` : Y coordinate
 * param `pixels` : Array of pixels
-* param `pixels_size` : Size or the array of pixels
+* param `pixels_number` : Number of pixels
  
 ```c
 // Prototype
-MLX_API void mlx_pixel_put_array(mlx_context mlx, mlx_window win, int x, int y, mlx_color* pixels, size_t pixels_size);
+MLX_API void mlx_pixel_put_array(mlx_context mlx, mlx_window win, int x, int y, mlx_color* pixels, size_t pixels_number);
 ```
 
 ### mlx_pixel_put_region()
