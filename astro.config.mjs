@@ -33,6 +33,9 @@ export default defineConfig({
         label: 'Drawing',
         link: '/guides/drawing/'
       }, {
+        label: 'Colors',
+        link: '/guides/colors/'
+      }, {
         label: 'Events',
         link: '/guides/events/'
       }, {
@@ -41,9 +44,6 @@ export default defineConfig({
       }, {
         label: 'Images',
         link: '/guides/images/'
-      }, {
-        label: 'Colors',
-        link: '/guides/colors/'
       }, {
         label: 'Texts',
         link: '/guides/text/'

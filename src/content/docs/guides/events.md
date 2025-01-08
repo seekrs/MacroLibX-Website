@@ -19,17 +19,21 @@ Here's how we could do it :
 ```c
 #include "MacroLibX/includes/mlx.h"
 
-int key_hook(int key, void* mlx)
+void key_hook(int key, void* param)
 {
     if(key == 41) // 41 is the key code for escape
-        mlx_loop_end(mlx); // if escape is pressed we stop the mlx_loop and so we continue in the main function
-    return (0); // Note that the return is ignored, it is just for compatibility with old minilibx
+        mlx_loop_end((mlx_context)param); // if escape is pressed we stop the mlx_loop and so we continue in the main function
 }
 
 int main(void)
 {
-    void* mlx = mlx_init();
-    void* win = mlx_new_window(mlx, 400, 400, "Hello world!");
+    mlx_context mlx = mlx_init();
+
+    mlx_window_create_info info = { 0 };
+    info.title = "Hello World!";
+    info.width = 400;
+    info.height = 400;
+    mlx_window win = mlx_new_window(mlx, &info);
 
     // we pass the mlx pointer as the last param so it can be used in the key_hook function
     mlx_on_event(mlx, win, MLX_KEYDOWN, key_hook, mlx);
@@ -37,7 +41,7 @@ int main(void)
     mlx_loop(mlx);
 
     mlx_destroy_window(mlx, win);
-    mlx_destroy_display(mlx);
+    mlx_destroy_context(mlx);
 }
 ```
 
@@ -48,22 +52,25 @@ Here's how we could do it :
 ```c
 #include "MacroLibX/includes/mlx.h"
 
-int mouse_hook(int button, void* param)
+void mouse_hook(int button, void* param)
 {
     /* Do stuffs */
-    return (0);
 }
 
-int mouse_wheel_hook(int button, void* param)
+void mouse_wheel_hook(int button, void* param)
 {
     /* Do stuffs */
-    return (0);
 }
 
 int main(void)
 {
-    void* mlx = mlx_init();
-    void* win = mlx_new_window(mlx, 400, 400, "Hello world!");
+    mlx_context mlx = mlx_init();
+
+    mlx_window_create_info info = { 0 };
+    info.title = "Hello World!";
+    info.width = 400;
+    info.height = 400;
+    mlx_window win = mlx_new_window(mlx, &info);
 
     mlx_on_event(mlx, win, MLX_MOUSEDOWN, mouse_hook, NULL);
     mlx_on_event(mlx, win, MLX_MOUSEWHEEL, mouse_wheel_hook, NULL);
@@ -71,7 +78,7 @@ int main(void)
     mlx_loop(mlx);
 
     mlx_destroy_window(mlx, win);
-    mlx_destroy_display(mlx);
+    mlx_destroy_context(mlx);
 }
 ```
 
@@ -81,23 +88,27 @@ The last type of events we can handle are window events (window moved, window ma
 ```c
 #include "MacroLibX/includes/mlx.h"
 
-int window_hook(int event, void* param)
+void window_hook(int event, void* param)
 {
     if(event == 0) // 0 is when we trigger the close of the window (by clicking the cross for example)
-        mlx_loop_end(param);
-    return (0);
+        mlx_loop_end((mlx_context)param);
 }
 
 int main(void)
 {
-    void* mlx = mlx_init();
-    void* win = mlx_new_window(mlx, 400, 400, "Hello world!");
+    mlx_context mlx = mlx_init();
+
+    mlx_window_create_info info = { 0 };
+    info.title = "Hello World!";
+    info.width = 400;
+    info.height = 400;
+    mlx_window win = mlx_new_window(mlx, &info);
 
     mlx_on_event(mlx, win, MLX_WINDOW_EVENT, window_hook, mlx);
 
     mlx_loop(mlx);
 
     mlx_destroy_window(mlx, win);
-    mlx_destroy_display(mlx);
+    mlx_destroy_context(mlx);
 }
 ```
