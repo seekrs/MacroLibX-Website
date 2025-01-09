@@ -31,6 +31,12 @@ You may want to use `mlx_set_fps_goal` to let the CPU rest a bit.
 ### Report issues on Gihtub
 When you find a problem with the MacroLibX, please search if it is not already reported on [Github](https://github.com/seekrs/MacroLibX/issues) and if not, report it yourself.
 
+### Use the suppression file
+Yes, I know that the MacroLibX leaks. In fact the library itself does not leak, but the third party libraries do. All of the leaks from the MacroLibX comes from [lazy Nvidia's Vulkan driver](https://www.reddit.com/r/vulkan/comments/18ph4jc/comment/kes88js/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button),
+paranoîd Valgrind on SDL2's X11 usage and still Valgrind finding false positives in `dl_open`. These are common "issues" present in **every Vulkan application** and nothing can really be
+done about this. The only solution found was to create a [Valgrind suppression file](https://github.com/seekrs/MacroLibX/blob/master/valgrind.supp) that clears most of the leaks. Some can still
+appear due to the suppression file not being invasive to avoid clearing user's program leaks.
+
 ## 👎 Bad practices
 
 ### Don't load multiple times the same image
