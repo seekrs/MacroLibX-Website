@@ -28,7 +28,7 @@ void key_hook(int key, void* param)
 int main(void)
 {
     mlx_context mlx = mlx_init();
-
+    
     mlx_window_create_info info = { 0 };
     info.title = "Hello World!";
     info.width = 400;
