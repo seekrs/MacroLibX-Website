@@ -63,6 +63,12 @@ int main(void)
 }
 ```
 
+This can be used to achieved cool renders like that
+
+<div align="center">
+    <img src="/RTT.png"/>
+</div>
+
 ## ⚙️ Functions
 In addition to the creation structure the API gives you a few functions to manipulate windows. Each of them are clear on what they do.
 Here are all of them :
