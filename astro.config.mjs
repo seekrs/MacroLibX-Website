@@ -30,8 +30,14 @@ export default defineConfig({
         label: 'Initialization',
         link: '/guides/initialization/'
       }, {
+        label: 'Window management',
+        link: '/guides/window/'
+      }, {
         label: 'Drawing',
         link: '/guides/drawing/'
+      }, {
+        label: 'Colors',
+        link: '/guides/colors/'
       }, {
         label: 'Events',
         link: '/guides/events/'
@@ -41,9 +47,6 @@ export default defineConfig({
       }, {
         label: 'Images',
         link: '/guides/images/'
-      }, {
-        label: 'Colors',
-        link: '/guides/colors/'
       }, {
         label: 'Texts',
         link: '/guides/text/'

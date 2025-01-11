@@ -11,30 +11,33 @@ You can find how to install it on your system [here](https://xmake.io/#/guide/in
 ## ⚙️ Configure the MacroLibX build
 Just as the Makfile build system, you can configure how xmake should build the MacroLibX. The base command to configure it is `xmake config [opts...]` or `xmake f [opts...]`.
 
-#### Compile mode
+### 📦 Compile mode
 You can configure xmake to build the mlx in debug mode or in release mode (release mode is enabled by default). To do so you can use `xmake config --mode=debug` or `xmake config --mode=release`.
 
-#### Set the toolchain
+### 🦺 Safety
+MacroLibX has a strong safety support, mainly by checking every pointer that you pass to it. But this safety has a cost that can be avoided by enabling `xmake config --disable_all_safeties=y` before compiling but don't be afraid to recieve segmentation faults from the mlx.
+
+### 🛠️ Set the toolchain
 To change the compilation toolchain you can use `xmake config --toolchain=[gcc|clang|...]`
 
-#### ⚠️⚠️⚠️ Image optimisations ⚠️⚠️⚠️
+### ⚠️⚠️⚠️ 🖼️ Image optimisations ⚠️⚠️⚠️
 If you run into glitches when writing or reading pixels from images you can turn off images optimisations by using `xmake config --images_optimized=n`.
 
-#### Force the integrated GPU (not recommended)
+### 🖥️ Force the integrated GPU (not recommended)
 You can force the mlx to use your integrated GPU using `xmake config --force_integrated_gpu=y`. Note that there are a lot of chances that your application crashes by using that.
 
-#### Dump the graphics memory
+### 💽 Dump the graphics memory
 The mlx can dump it's graphics memory use to json files every two seconds by enabling this option `xmake config --graphics_memory_dump=y`.
 
-#### A possible build configuration
+### 🪛 A possible build configuration
 As a configuration example here's how the command can look like `xmake config --mode=debug --toolchain=clang --graphics_memory_dump=y --images_optimized=n`
 
 ## 🚧 Build the lib
 
-#### Compile using command-line (first method)
+### Compile using command-line (first method)
 Once you're ready to compile the lib, run `xmake` (or `xmake -jX` if you wish not to use all your computer threads, with X being the number of threads you wish to use) and watch as the lib compiles.
 
-#### Generate a project (second method)
+### Generate a project (second method)
 xmake can also generate a project file for another tool:
 * Visual Studio : `xmake project -k vs`
 * CMakeLists.txt (which you can open in CLion and more) : `xmake project -k cmake`
@@ -47,6 +50,5 @@ You should now be able to open the project file with the tool of your choice.
 ## 😋 Enjoy
 Enjoy you project built with the mlx
 <p align="center">
-    <img src="/screenshot_test_windows.png" alt="drawing" width="400"/>
+    <img src="./res/screenshot_test_windows.png" alt="drawing" width="400"/>
 </p>
-
