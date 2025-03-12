@@ -91,7 +91,7 @@ typedef enum mlx_event_type
 ### mlx_init()
 Initializes the MLX internal application
 
-Returns an opaque handler to the internal MLX application or `NULL` (0x0) in case of error
+Returns an opaque handler to the internal MLX application or `MLX_NULL_HANDLE` (0x0) in case of error
 ```c
 // Prototype
 MLX_API mlx_context mlx_init();
@@ -124,7 +124,7 @@ Creates a new window
 * param `mlx` : Internal MLX application
 * param `info` : Pointer to a descriptor structure
 
-Returns an opaque handler to the internal MLX window or `NULL` (0x0) in case of error
+Returns an opaque handler to the internal MLX window or `MLX_NULL_HANDLE` (0x0) in case of error
 
 ```c
 // Prototype
@@ -357,7 +357,7 @@ Create a new empty image
 * param `width` : Width of the image
 * param `height` : Height of the image
 
-Returns an opaque handler to the internal image or NULL (0x0) in case of error
+Returns an opaque handler to the internal image or `MLX_NULL_HANDLE` (0x0) in case of error
 
 ```c
 // Prototype
@@ -372,7 +372,7 @@ Create a new image from a png/jpg/bmp file
 * param `width` : Get the width of the image
 * param `heigth` : Get the height of the image
 
-Returns an opaque handler to the internal image or NULL (0x0) in case of error
+Returns an opaque handler to the internal image or `MLX_NULL_HANDLE` (0x0) in case of error
 
 ```c
 // Prototype
@@ -620,4 +620,15 @@ Transform and put image to the given window
 ```c
 // Prototype
 MLX_API void mlx_put_transformed_image_to_window(mlx_context mlx, mlx_window win, mlx_image image, int x, int y, float scale_x, float scale_y, float angle);
+```
+
+### mlx_get_proc_addr()
+Get direct pointers to hidden functions
+
+* param `mlx` : Internal MLX application
+
+Returns a function pointer or `NULL` (0x0) in case of error
+```c
+// Prototype
+MLX_API mlx_function mlx_get_proc_addr(mlx_context mlx, const char* name);
 ```
