@@ -121,6 +121,3 @@ int main(void)
 ```
 
 Note that you have to make sure the pixels buffer you pass to `mlx_get_image_region` is big enough for the given region.
-
-## ⚠️ Troubleshooting ⚠️
-If you run into glitches when writing or reading pixels from images you can turn off images optimisations by using `make IMAGES_OPTIMIZED=false` when compiling the MacroLibX.

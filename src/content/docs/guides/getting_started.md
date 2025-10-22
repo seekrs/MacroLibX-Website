@@ -66,9 +66,6 @@ MacroLibX has a strong safety support, mainly by checking every pointer that you
 #### Set the toolchain
 If you want to use `GCC` to build the mlx you can use `make TOOLCHAIN=gcc`
 
-#### ⚠️⚠️⚠️ Image optimisations ⚠️⚠️⚠️
-If you run into glitches when writing or reading pixels from images you can turn off images optimisations by using `make IMAGES_OPTIMIZED=false`.
-
 #### Force the integrated GPU (not recommended)
 You can force the mlx to use your integrated GPU by using `make FORCE_INTEGRATED_GPU=true`. Note that there are a lot of chances that your application crashes by using that.
 
