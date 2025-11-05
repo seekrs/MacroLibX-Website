@@ -37,13 +37,13 @@ int main(void)
     window_info.title = "Hello World!";
     window_info.width = 400;
     window_info.height = 400;
-    mlx_window win = mlx_new_window(mlx, &info);
+    mlx_window win = mlx_new_window(mlx, &window_info);
 
     mlx_image target = mlx_new_image(mlx, 100, 100);
     
     mlx_window_create_info target_info = { 0 };
     target_info.render_target = target;
-    mlx_window target_win = mlx_new_window(mlx, &info);
+    mlx_window target_win = mlx_new_window(mlx, &target_info);
 
     {
         // All of this will be rendered in `target`
