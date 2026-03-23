@@ -46,7 +46,7 @@ void update(void* param)
     mlx_t* mlx = (mlx_t*)param;
 
     int color = 0;
-    for(int j = 0; i < 400; j++)
+    for(int j = 0; j < 400; j++)
     {
         mlx_pixel_put(mlx->mlx, mlx->win, j, j, (mlx_color){ .rgba = 0xFF0000FF + (color << 8) });
         mlx_pixel_put(mlx->mlx, mlx->win, 399 - j, j, (mlx_color){ .rgba = 0xFF0000FF });
