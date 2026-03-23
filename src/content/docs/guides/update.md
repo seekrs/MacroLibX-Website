@@ -70,14 +70,14 @@ int main(void)
     info.title = "Hello World!";
     info.width = 400;
     info.height = 400;
-    mlx.win = mlx_new_window(mlx, &info);
+    mlx.win = mlx_new_window(mlx.mlx, &info);
 
     for(int i = 0; i < 100; i++)
     {
         for(int j = 0; j < 100; j++)
         {
             // this will be rendered until we call `mlx_clear_window`
-            mlx_pixel_put(mlx, win, i, j, (mlx_color){ .rgba = 0xFF0000FF });
+            mlx_pixel_put(mlx.mlx, mlx.win, i, j, (mlx_color){ .rgba = 0xFF0000FF });
         }
     }
 
