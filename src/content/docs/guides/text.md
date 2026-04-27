@@ -31,7 +31,7 @@ int main(void)
 ## 🔤 Using fonts
 The MacroLibX is also capable of using custom fonts (as long as it is a TTF) given by the user. To do so, we can use `mlx_set_font` and `mlx_set_font_scale`.
 
-The difference between thoses are that `mlx_set_font_scale` allows the user to scale the font as he/she wants.
+The difference between thoses are that `mlx_set_font_scale` allows the user to scale the font as they want.
 
 We can even use several fonts in the same frame :
 
