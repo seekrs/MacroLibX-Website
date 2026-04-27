@@ -48,18 +48,18 @@ int main(void)
     info.height = 400;
     mlx_window win = mlx_new_window(mlx, &info);
 
-    mlx_set_font(mlx, win, "/path/to/my/awesome/font.ttf");
+    mlx_set_font(mlx, "/path/to/my/awesome/font.ttf");
     // Now all texts will be rendered using font.ttf
     mlx_string_put(mlx, win, 200, 210, (mlx_color){ .rgba = 0xFFFFFFFF }, "this is my text");
     mlx_string_put(mlx, win, 100, 10, (mlx_color){ .rgba = 0xFFFE5FFF }, "MacroLibX > all");
     mlx_string_put(mlx, win, 300, 50, (mlx_color){ .rgba = 0xFFFF00FF }, "42angouleme");
 
-    mlx_set_font(mlx, win, "/path/to/my/awesome/another_font.ttf");
+    mlx_set_font(mlx, "/path/to/my/awesome/another_font.ttf");
     // Now all texts will be rendered using another_font.ttf
     mlx_string_put(mlx, win, 0, 20, (mlx_color){ .rgba = 0xFFFFFFFF }, "Akel");
     mlx_string_put(mlx, win, 300, 210, (mlx_color){ .rgba = 0xFFFE5FFF }, "vim > vscode");
 
-    mlx_set_font_scale(mlx, win, "/path/to/my/awesome/font.ttf", 16.0f);
+    mlx_set_font_scale(mlx, "/path/to/my/awesome/font.ttf", 16.0f);
     // Now all texts will be rendered using font.ttf but scaled at 16 pixels height
     mlx_string_put(mlx, win, 200, 210, (mlx_color){ .rgba = 0xFFFFFFFF }, "kroussar > kiroussa");
     mlx_string_put(mlx, win, 100, 10, (mlx_color){ .rgba = 0xFFFE5FFF }, "i use arch btw");
