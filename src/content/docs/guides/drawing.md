@@ -5,7 +5,7 @@ description: how to draw in the MacroLibX
 
 ## ✏️ Drawing pixels
 Now that we have basic window management, we can get started with drawing pixels to the window.
-To do so you can use `mlx_pixel_put` by giving it your mlx pointer, your window pointer, coordinates where to draw it and its color (see [colors](/guides/colors) to learn about `mlx_color`):
+To do so you can use `mlx_pixel_put` by giving it your mlx pointer, your window pointer, coordinates where to draw it and its color (see [colors](/guides/colors) to learn about `mlx_color`. Note that it is recommended to create an image and use `mlx_set_image_pixel` for repeated use):
 
 ```c
 #include "MacroLibX/includes/mlx.h"
