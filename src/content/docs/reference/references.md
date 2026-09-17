@@ -619,7 +619,7 @@ Transform and put image to the given window
  
 ```c
 // Prototype
-MLX_API void mlx_put_transformed_image_to_window(mlx_context mlx, mlx_window win, mlx_image image, int x, int y, float scale_x, float scale_y, float angle);
+MLX_API void mlx_put_transformed_image_to_window(mlx_context mlx, mlx_window win, mlx_image image, float x, float y, float scale_x, float scale_y, float angle);
 ```
 
 ### mlx_get_proc_addr()
