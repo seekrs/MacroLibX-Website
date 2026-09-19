@@ -112,6 +112,8 @@ Code | Value
 **MLX_KEY_RALT** | 230
 **MLX_KEY_RGUI** | 231
 
+---
+
 ### Mouse buttons
 
 Code | Value
@@ -122,6 +124,7 @@ Code | Value
 **MLX_MOUSE_4** | 4
 **MLX_MOUSE_5** | 5
 
+---
 
 ### Scroll directions
 
@@ -132,6 +135,7 @@ Code | Value
 **MLX_MOUSE_SCROLL_RIGHT** | 3
 **MLX_MOUSE_SCROLL_LEFT** | 4
 
+---
 
 ### Window events
  
@@ -149,6 +153,7 @@ Code | Value
 **MLX_WINDOW_RESIZED** | 9
 **MLX_WINDOW_RESTORED** | 11
 
+---
 
 ### Controller buttons
 
