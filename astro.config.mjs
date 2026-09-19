@@ -51,14 +51,27 @@ export default defineConfig({
         label: 'Texts',
         link: '/guides/text/'
       }, {
+        label: 'Sound',
+        link: '/guides/sound/'
+      },{
         label: 'xmake build',
         link: '/guides/xmake/'
       }]
     }, {
       label: 'References',
-      autogenerate: {
-        directory: 'reference'
-      }
+      items: [{
+        label: 'Good and bad practices',
+        link: '/reference/practices/'
+      }, {
+        label: 'Standard Reference',
+        link: '/reference/reference/'
+      }, {
+        label: 'Extended Reference',
+        link: '/reference/ext_reference/'
+      }, {
+        label: 'Keycode Reference',
+        link: '/reference/keycodes/'
+      }]
     }]
   }), icon(), solidJs()]
 });

@@ -83,7 +83,7 @@ int main(void)
 ```
 
 ## 🖥️ Window events
-The last type of events we can handle are window events (window moved, window maximized, window focused, window closed, ... ).
+Another type of events we can handle are window events (window moved, window maximized, window focused, window closed, ... ).
 
 ```c
 #include "MacroLibX/includes/mlx.h"
@@ -112,3 +112,9 @@ int main(void)
     mlx_destroy_context(mlx);
 }
 ```
+
+## 🎮 Controllers
+Lastly, there are events and functions to manage controllers, they are considered an extended feature so a deep dive will not be featured here.
+One unique advantage of controllers is the ability to have multiple connected at once, allowing for easy local multiplayer.
+
+See [the extended reference](../../reference/ext_reference/) for more information and the `controller_paint` example in the repo for a concrete implementation.
