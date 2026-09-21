@@ -23,7 +23,10 @@ mlx_put_image_to_window(mlx, win, img, 300, 550);
 
 ### Use the `mlx_extended.h` functions
 Use extended functions instead of calling a ton of times `mlx_put_pixel` or `mlx_set_image_pixel` to draw or modify images.
-They are A LOT more optimized.
+
+### Use images
+Use an `mlx_image` and draw it to the window rather than using `mlx_put_region` directly.
+This is A LOT more optimized.
 
 ### Don't let the CPU burn
 You may want to use `mlx_set_fps_goal` to let the CPU rest a bit.

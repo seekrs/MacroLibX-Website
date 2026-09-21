@@ -248,7 +248,7 @@ __Parameters__:\
 ---
 
 ### mlx_get_channel_playback_position()
-**Get the playback position of the sount in the given audio channel**
+**Get the playback position of the sound in the given audio channel**
 
 __Parameters__:\
 \- *(mlx_context)* `mlx`: Internal MLX application\
@@ -295,7 +295,7 @@ __Parameters__:\
 __Parameters__:\
 \- *(mlx_context)* `mlx`: Internal MLX application\
 \- *(char\*)* `file`: Path to the wav file\
-\- *(float\*)* `duration`: Pointer to get to the duration of the sound in seconds
+\- *(float\*)* `duration`: Pointer to get the duration of the sound in seconds
 
 __Returns__:\
 \- (mlx_sound): An opaque handler to the internal MLX sound or NULL in case of error
